@@ -25,6 +25,7 @@ export const ConverterContainer = styled.div`
     gap: 50px;
 
     animation: ${containerShow} 0.5s;
+    width: 100%;
 `;
 
 export const Label = styled.label`
@@ -48,9 +49,10 @@ export const Input = styled.input`
     outline: none;
     font-family: RobotoMono;
 
-    font-size: 4.5em;
+    font-size: 4em;
     text-align: center;
 
     margin: 20px;
     text-overflow: ellipsis;
+    max-width: 90%;
 `;
