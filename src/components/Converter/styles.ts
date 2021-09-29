@@ -18,6 +18,7 @@ const containerShow = keyframes`
 `;
 
 export const ConverterContainer = styled.div`
+    transform: translateY(20px);
     display: flex;
     flex-direction: column;
 

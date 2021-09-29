@@ -11,7 +11,10 @@ export default function Title({ clickable, onClick }: Props) {
             <StyledTitleVector
                 fill='#fff'
                 onClick={clickable ? onClick : undefined} />
-            <TitleHint>Click here!</TitleHint>
+            <TitleHint
+                onClick={clickable ? onClick : undefined}>
+                    Click or tap here!
+            </TitleHint>
         </TitleContainer>
     )
 }

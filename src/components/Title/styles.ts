@@ -10,6 +10,7 @@ export const TitleHint = styled.span`
     font-family: RobotoMono;
     font-size: .4em;
     color: #fff;
+    cursor: pointer;
 `
 
 export const TitleContainer = styled.div<{ clickable: boolean }>`
@@ -21,8 +22,8 @@ export const TitleContainer = styled.div<{ clickable: boolean }>`
     gap: 6px;
 
     position: absolute;
-    transform: ${props => props.clickable ? 'scale(3)' : 'scale(1.5)'};
-    top: ${props => props.clickable ? '45%' : '40px;'};
+    transform: ${props => props.clickable ? 'scale(3)' : 'scale(1)'};
+    top: ${props => props.clickable ? '45%' : '20px;'};
     transition: all ease-in-out .5s;
 
     ${StyledTitleVector} {

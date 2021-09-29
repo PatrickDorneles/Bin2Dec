@@ -31,11 +31,17 @@ export default function Converter({ open }: Props) {
         <ConverterContainer>
             <Label>
                 Binary
-                <Input value={binary} onChange={handleBinaryInputChange}/>
+                <Input 
+                    value={binary} 
+                    onChange={handleBinaryInputChange}
+                    placeholder="Binary input"/>
             </Label>
             <Label>
                 Decimal
-                <Input value={transformFromBinaryToDecimal() || ''} disabled/>
+                <Input 
+                    value={transformFromBinaryToDecimal() || ''} 
+                    placeholder="Decimal output"
+                    disabled/>
             </Label>
         </ConverterContainer>
     )
