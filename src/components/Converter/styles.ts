@@ -40,7 +40,7 @@ export const Label = styled.label`
     
 `;
 
-export const Input = styled.input`
+export const TextareaInput = styled.textarea`
     background-color: transparent;
     border: transparent;
 
@@ -53,6 +53,8 @@ export const Input = styled.input`
     text-align: center;
 
     margin: 20px;
-    text-overflow: ellipsis;
-    max-width: 90%;
+    width: 90%;
+
+    resize: none;
+    columns: 1;
 `;

@@ -13,12 +13,13 @@ export default function App() {
                 <Title clickable={!open} onClick={() => setOpen(true)} />
                 <Converter open={open} />
 
-                <AuthorSection>
-                    <AuthorText>
-                        Made by <a href="https://github.com/PatrickDorneles">Patrick Dorneles</a>
-                    </AuthorText>
-                </AuthorSection>
+                
             </MainApplication>
+            <AuthorSection>
+                <AuthorText>
+                    Made by <a href="https://github.com/PatrickDorneles">Patrick Dorneles</a>
+                </AuthorText>
+            </AuthorSection>
         </AppContainer>
     );
 }

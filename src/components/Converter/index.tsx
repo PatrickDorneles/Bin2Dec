@@ -1,5 +1,5 @@
 import { ChangeEvent, useState } from "react"
-import { ConverterContainer, Input, Label } from "./styles";
+import { ConverterContainer, TextareaInput, Label } from "./styles";
 
 interface Props {
     open: boolean
@@ -13,7 +13,7 @@ export default function Converter({ open }: Props) {
         return parseInt(binary, 2)
     }
 
-    function handleBinaryInputChange(e: ChangeEvent<HTMLInputElement>) {
+    function handleBinaryInputChange(e: ChangeEvent<HTMLTextAreaElement>) {
         const value = e.target.value;
         const lastKey = value[value.length-1]
 
@@ -31,14 +31,15 @@ export default function Converter({ open }: Props) {
         <ConverterContainer>
             <Label>
                 Binary
-                <Input 
+                <TextareaInput 
                     value={binary} 
                     onChange={handleBinaryInputChange}
+                    rows={1}
                     placeholder="Binary input"/>
             </Label>
             <Label>
                 Decimal
-                <Input 
+                <TextareaInput 
                     value={transformFromBinaryToDecimal() || ''} 
                     placeholder="Decimal output"
                     disabled/>
