@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Converter from "../Converter";
 import Title from "../Title";
-import { AppContainer } from "./styles";
+import { AppContainer, AuthorSection, AuthorText, MainApplication } from "./styles";
 
 export default function App() {
 
@@ -9,8 +9,16 @@ export default function App() {
 
     return (
         <AppContainer>
-            <Title clickable={!open} onClick={() => setOpen(true)} />
-            <Converter open={open} />
+            <MainApplication>
+                <Title clickable={!open} onClick={() => setOpen(true)} />
+                <Converter open={open} />
+
+                <AuthorSection>
+                    <AuthorText>
+                        Made by <a href="https://github.com/PatrickDorneles">Patrick Dorneles</a>
+                    </AuthorText>
+                </AuthorSection>
+            </MainApplication>
         </AppContainer>
     );
 }
