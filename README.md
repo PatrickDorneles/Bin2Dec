@@ -1,4 +1,6 @@
-![alt text](./public/logo.png)
+![Bin2Dec "Logo"](./public/logo.png)
+
+[![React Badge](https://img.shields.io/badge/-React-6BDBFA?style=for-the-badge&logo=React&logoColor=white)](https://reactjs.org/)
 
 An implementation of the app idea Bin2Dec with React and Typescript.
 
